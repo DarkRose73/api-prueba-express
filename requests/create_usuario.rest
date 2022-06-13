@@ -1,0 +1,16 @@
+POST http://localhost:3001/api/usuarios 
+Content-Type: application/json
+
+{
+    "nombre":"Felipe",
+    "edad":24
+}
+
+###
+
+POST http://localhost:3001/api/usuarios 
+Content-Type: application/json
+
+{
+
+}
