@@ -93,7 +93,9 @@ app.use((request, response) => {
   })
 })
 
-const PORT = 3001
+//  Al momento de realizar deploy con Heroku se debe definir el puerto de la siguiente manera
+// Así Heroku elige el puerto en base a sus variables de entorno
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`El servidor se está ejecutando en http://localhost:${PORT}`)
 })
